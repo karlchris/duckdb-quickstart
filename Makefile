@@ -5,3 +5,6 @@ build:
 
 run:
 	docker run --rm -d -p 8888:8888 --name ${IMG_NAME} -v ${PWD}/${IMG_NAME}:/app ${IMG_NAME}
+
+stop:
+	docker stop ${IMG_NAME}
